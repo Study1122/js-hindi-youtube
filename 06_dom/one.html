@@ -6,19 +6,24 @@
     <title>DOM learning</title>
     <style>
         .bg-black{
-            background-color: #212121;
+            background-color: lightslategray;
             color: #fff;
         }
     </style>
 </head>
 <body class="bg-black">
     <div >
+        <div class="navbar" id="nav" style="background-color: aquamarine;"> 
+            <h1 class="main" id="nav-title">Navbar Title</h1>
+        </div>
         <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <input type="password" name="" id="">
+
+        
 
         <ul>
             <li class="list-item">one</li>
@@ -27,5 +32,17 @@
             <li class="list-item">four</li>
         </ul>
     </div>
+
+    <script>
+        const title = document.getElementById("nav-title");
+        console.log(title);
+        console.log(title.id);
+        console.log(title.class);   //it returns undefided
+        console.log(title.className);
+        console.log(title.getAttribute('id')); 
+        console.log(title.setAttribute('class', 'main')); 
+        console.log(title.className);
+        
+    </script>
 </body>
 </html>
